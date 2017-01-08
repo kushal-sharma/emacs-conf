@@ -61,3 +61,4 @@
 (autoload 'jsx-mode "jsx-mode" "JSX mode" t)
 (global-auto-complete-mode t)
 (setq evil-ex-visual-char-range t)
+(server-start)
