@@ -62,3 +62,5 @@
 (global-auto-complete-mode t)
 (setq evil-ex-visual-char-range t)
 (server-start)
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
