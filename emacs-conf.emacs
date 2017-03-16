@@ -61,4 +61,7 @@
 (autoload 'jsx-mode "jsx-mode" "JSX mode" t)
 (global-auto-complete-mode t)
 (setq evil-ex-visual-char-range t)
-(server-start)
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+(load "server")
+(unless (server-running-p) (server-start))
